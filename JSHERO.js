@@ -705,6 +705,23 @@ return result;
 
 Example: lcm(4, 6) should return 12.
 
-Solution:
+Solution:function lcm(a,b){
+let lcmNo = Math.max(a,b);
+while(lcmNo % a !== 0 || lcmNo % b !== 0){
+lcmNo++
+}
+return lcmNo
+}
 ==============================================================
+70=>Write a function gcd that takes two natural numbers and calculates their gcd.
+
+Example: gcd(6, 15) should return 3.
   
+Solution:function gcd(a,b){
+let lcmNo = Math.max(a,b);
+let gcdVal
+while(lcmNo % a !== 0 || lcmNo % b !== 0){
+lcmNo++
+}
+return gcdVal= (a*b)/lcmNo;
+}
