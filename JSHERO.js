@@ -748,8 +748,21 @@ Solution:function isPrime(num) {
   return true;
 }
 ==============================================================
-  72=>
-Solution:
+  72=>Write a function sum that calculates the sum of all elements of a two-dimensional array.
+
+Example: sum([[1, 2], [3]]) should return 6.
+Solution:function sum(arr){
+let ans= 0;
+
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    ans+= arr[i][j];
+  }
+}
+return ans
+
+}
 ==============================================================
   73=>
 Solution:
